@@ -51,8 +51,7 @@ We remain steadfast to the pursuit of actualizing Change in Nigeria, while champ
 </string>
 
     <string name="about_ddi">
-
-        <body>
+<html>        <body>
         <h1><i>Bio</i></h1>
         <p>
         <ul style="list-style-type:square">
@@ -152,11 +151,12 @@ It is imperative to note that he has been committed in providing free services i
 Darius Ishaku was the past Minister of State for Niger Delta Affairs before he resigned in other to participate in the 2015 Gubernatorial polls. He however emerged as the Governor of Taraba State after a re-run election.
         </p>
         </body>
+</html>
 
     </string>
 
     <string name="about_deputy">
-        <body>
+<html>  <body>
 
         <h2><i>INTRODUCTION</i></h2>
         <p>
@@ -192,12 +192,15 @@ Haruna was elected in 2011 into the House of Representatives to represent Bali/G
           <li> A Motion on the Urgent Need to verify and ascertain the Volume and value of Crude Oil Sales by the Nigeria National Petroleum Corporation [NNPC] from January 2013 to date.</li>
         </ul>
 <br/>
-
+ <br/>
+        <br/> <br/>
+        <br/>
             That Haruna Manu is today the Deputy Governor is a result of sheer hard work and sincerity; an arrangement ordained by God Almighty.
 
 
         </p>
         </body>
-         </string>
+</html>
+   </string>
 
 </resources>

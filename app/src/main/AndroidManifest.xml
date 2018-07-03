@@ -24,10 +24,14 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".HomeActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme" />
+   <activity
+            android:name=".Gallery"
+       android:label="Gallery"
+            android:theme="@style/AppTheme" />
     </application>
 
 </manifest>

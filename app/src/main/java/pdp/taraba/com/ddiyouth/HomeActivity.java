@@ -13,7 +13,6 @@ import android.os.Build;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -23,23 +22,17 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.FrameLayout;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 
-public class HomeActivity extends AppCompatActivity implements SharedPreferences.OnSharedPreferenceChangeListener {
-    //   public ImageView ;
-    String name;
-    String email;
-    byte[] image;
+public class HomeActivity extends AppCompatActivity {
     FrameLayout frameLayout;
     //  private SharedPreferences mSharedPreferences;
     Class fragmentClass = Home.class;
     Fragment myFragment = (Fragment) fragmentClass.newInstance();
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToggle;
-    private TextView currentTextView;
 
     public HomeActivity() throws IllegalAccessException, InstantiationException {
     }
@@ -51,15 +44,12 @@ public class HomeActivity extends AppCompatActivity implements SharedPreferences
                 .setCancelable(false)
                 .setPositiveButton("Close app", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
-                        //                       Instruction.this.finish();
                         finishAffinity();
                     }
                 })
                 .setNegativeButton("CONTINUE", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-//                        Intent i = new Intent(getApplicationContext(), Login.class);
-                        //                      startActivity(i);
                     }
                 })
                 .show();
@@ -80,11 +70,7 @@ public class HomeActivity extends AppCompatActivity implements SharedPreferences
 
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer);
         NavigationView navigationView = (NavigationView) findViewById(R.id.nv);
-        // View img = navigationView.getHeaderView(0);
-
-        //img_cover = (ImageView) findViewById(R.id.backdrop);
         frameLayout = (FrameLayout) findViewById(R.id.flcontent);
-        //mainLay = (RelativeLayout) findViewById(R.id.main);
         mToggle = new ActionBarDrawerToggle(this, mDrawerLayout, R.string.open, R.string.close);
         mDrawerLayout.addDrawerListener(mToggle);
         mToggle.syncState();
@@ -92,15 +78,6 @@ public class HomeActivity extends AppCompatActivity implements SharedPreferences
         setUpDrawerContent(navigationView);
         FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.flcontent, myFragment).commit();
-
-    }
-
-    @Override
-    public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
-        // handle the preference change here i.e on delete
-//        loadArray();
-//        saveArray();
-//        adapter.notifyDataSetChanged();
     }
 
 
