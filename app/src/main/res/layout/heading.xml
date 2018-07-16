@@ -40,24 +40,21 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:gravity="center"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:gravity="center"
                     android:text="POWERED BY NYCN"
                     android:textColor="#f11"
                     android:textStyle="italic" />
 
                 <ImageView
-                    android:visibility="gone"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_gravity="center"
-                    android:background="@drawable/nycn" />
-
+                    android:background="@drawable/nycn"
+                    android:visibility="gone" />
             </LinearLayout>
-
-
         </LinearLayout>
 
         <ImageView

@@ -9,7 +9,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/pdp"
+        android:background="@drawable/pdp1"
         android:gravity="bottom"
         android:orientation="horizontal">
 
